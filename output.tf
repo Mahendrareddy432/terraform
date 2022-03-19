@@ -57,7 +57,7 @@ variable "samplex" {
 }
 
 output "samplex" {
-  value = "value 1 =${var.samplex[0]},${var.samplex[1]},value 3=${var.samplex[2]}"
+  value = "value 1 =${var.samplex[0]},valve 2=${var.samplex[1]},value 3=${var.samplex[2]}"
 }
 
 variable "sampley" {
