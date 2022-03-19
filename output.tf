@@ -1,7 +1,7 @@
 
-output "sample" {
-  value= "Hello World"
-}
+#output "sample" {
+ # value= "Hello World"
+#}
 
 
 output "abc" {
@@ -14,6 +14,13 @@ variable "efg" {
 
 output  "efg" {
   value=var.efg
+}
+
+variable "sample" {
+  default= "Hello Mahendra"
+}
+output "sample" {
+  value =var.sample
 }
 
 # output "abc" {
