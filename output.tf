@@ -3,7 +3,7 @@
 #}
 
 output "sample" {
-  value= "Hello\nWorld"
+  value= "Hello World"
 }
 
 output "abc" {
