@@ -1,7 +1,13 @@
 # provider "aws"  {
 # region = "us-east-1"
 # }
-
+terraform {
+  required_providers {
+    mongodbatlas = {
+      source = "mongogdb/mongodbatlas"
+    }
+  }
+}
 resource "allow_sample" "work" {
     ami     ="0bb6af715826253bf"
 instance_type="t2.micro"
