@@ -1,6 +1,6 @@
-# provider "aws" {
-# region = "us-east-1"
-# }
+provider "aws" {
+region = "us-east-1"
+}
 
 resource "allow_sample" "work" {
     ami     ="0bb6af715826253bf"
