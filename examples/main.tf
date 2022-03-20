@@ -1,7 +1,7 @@
-# Pprovider and region
+# Provider and region
 
 provider "aws" {
-region ="us_east_1"
+region ="us-east-1"
 }
 
 ## Ec2 instance creation
