@@ -2,7 +2,7 @@ provider "aws"{
     region = "us-east-1"
 }
 
-aws_instance="allow_sample" "work"{
+resource="allow_sample" "work"{
     ami     ="0bb6af715826253bf"
 instance_type="t3micro"
 vpc_security_group_ids=[aws.security.group.mahe.id]
