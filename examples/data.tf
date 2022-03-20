@@ -1,17 +1,10 @@
-# provider "aws"  {
+# provider "aws" {
 # region = "us-east-1"
 # }
-terraform {
-  required_providers {
-    mongodbatlas = {
-      source = "mongogdb/mongodbatlas"
-    }
-  }
-}
 resource "allow_sample" "work" {
-    ami     ="0bb6af715826253bf"
-instance_type="t2.micro"
-vpc_security_group_ids=[aws.security.group.mahe.id]
+    ami     = "0bb6af715826253bf"
+instance_type= "t2.micro"
+vpc_security_group_ids=[aws_security_group.mahe.id]
 tags = {
     Name = "work"
   }
@@ -20,7 +13,7 @@ tags = {
 resource "aws_security_group" "mahe" {
   name        = "mahe"
   description = "Allow TLS inbound traffic"
-  vpc_id      = aws_vpc.main.id
+  #vpc_id      = aws_vpc.main.id
 
   ingress {
     description      = "TLS from VPC"
