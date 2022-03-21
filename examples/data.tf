@@ -9,7 +9,7 @@
 resource "aws_instance" "sample" {
     ami    = "ami-0bb6af715826253bf"
 instance_type ="t2.micro"
-vpc_security_group_ids=[aws_security_group.allow_sample.id]
+vpc_security_group_ids=[aws_security_group.allow_sample2.id]
 ##security              providername        localname
 tags = {
     Name = "sample"
@@ -18,7 +18,7 @@ tags = {
 
 ## Security group
 
-resource "aws_security_group" "allow_sample" {
+resource "aws_security_group" "allow_sample2" {
   name        = "allow_sample"
   description = "Allow TLS inbound traffic"
   #vpc_id      = aws_vpc.main.id
