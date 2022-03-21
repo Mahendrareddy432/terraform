@@ -1,5 +1,5 @@
 
-resource "aws_instance" "data" {
+resource "aws_instance" "java" {
     ami = "ami-0bb6af715826253bf"
   vpc_security_group_ids = [aws_security_group.mongo.id]
   tags = {
