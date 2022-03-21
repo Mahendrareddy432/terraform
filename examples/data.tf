@@ -19,7 +19,7 @@ tags = {
 ## Security group
 
 resource "aws_security_group" "allow_sample2" {
-  name        = "allow_sample"
+  name        = "allow_sample2"
   description = "Allow TLS inbound traffic"
   #vpc_id      = aws_vpc.main.id
 
@@ -41,7 +41,7 @@ resource "aws_security_group" "allow_sample2" {
   }
 
   tags = {
-    Name = "allow_sample"
+    Name = "allow_sample2"
   }
 }
 
