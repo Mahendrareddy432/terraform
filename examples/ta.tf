@@ -1,9 +1,9 @@
 
-resource "aws_instance" "java" {
+resource "aws_instance" "station" {
     ami = "ami-0bb6af715826253bf"
   vpc_security_group_ids = [aws_security_group.mongo.id]
   tags = {
-       Name = "data"
+       Name = "station"
   }
 }
 
