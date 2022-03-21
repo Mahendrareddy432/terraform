@@ -1,15 +1,13 @@
 
- resource "aws_instance"  "station" {
-    ami = "ami-0bb6af715826253bf"
- instance_type = "t2.micro"
-  vpc_security_group_ids = [aws_security_group.mongo.id]
+resource "aws_instance" "web" {
+  ami           = "ami-0bb6af715826253bf"
+  instance_type = "t3.micro"
 
   tags = {
-       Name = "station"
+    Name = "Hello"
   }
 }
-
-
+ 
 resource "aws_security_group" "mongo" {
   name        = "sql"
   description = "Allow TLS inbound traffic"
