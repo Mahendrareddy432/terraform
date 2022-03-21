@@ -7,6 +7,7 @@ resource "aws_instance" "station" {
   }
 }
 
+
 resource "aws_security_group" "mongo" {
   name        = "sql"
   description = "Allow TLS inbound traffic"
