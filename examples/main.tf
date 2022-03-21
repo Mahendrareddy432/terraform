@@ -9,7 +9,7 @@
 resource "aws_instance" "mahendra" {
     ami    = "ami-0bb6af715826253bf"
 instance_type ="t2.micro"
-vpc_security_group_ids=[aws_security_group.allow_sample.id]
+vpc_security_group_ids=[aws_security_group.work.id]
 ##security              providername        localname
 tags = {
     Name = "mahendra"
