@@ -6,20 +6,20 @@
 
 ## Ec2 instance creation
 
-resource "aws_instance" "sample" {
+resource "aws_instance" "mahendra" {
     ami    = "ami-0bb6af715826253bf"
 instance_type ="t2.micro"
 vpc_security_group_ids=[aws_security_group.allow_sample.id]
 ##security              providername        localname
 tags = {
-    Name = "sample"
+    Name = "mahendra"
   }
 }
 
 ## Security group
 
-resource "aws_security_group" "allow_sample" {
-  name        = "allow_sample"
+resource "aws_security_group" "work" {
+  name        = "work"
   description = "Allow TLS inbound traffic"
   #vpc_id      = aws_vpc.main.id
 
@@ -41,6 +41,6 @@ resource "aws_security_group" "allow_sample" {
   }
 
   tags = {
-    Name = "allow_sample"
+    Name = "work"
   }
 }
