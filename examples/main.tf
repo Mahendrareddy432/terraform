@@ -41,6 +41,7 @@ resource "aws_security_group" "work1" {
   }
 
   tags = {
-    Name = "work1"
+    Name = "work2"
   }
 }
+
