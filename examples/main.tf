@@ -52,7 +52,9 @@ resource "aws_security_group" "work1" {
 terraform {
   backend "s3" {
     bucket = "mahendra432"
+            # s3 bucket name
     key    = "examples/main/terraform.tfstate"
+            #folder name/new filename for s3/terraform.tfstate
     region = "us-east-1"
   }
 }
