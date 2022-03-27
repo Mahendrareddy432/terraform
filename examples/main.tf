@@ -18,6 +18,7 @@ tags = {
 
 ## Security group
 
+
 resource "aws_security_group" "work1" {
   name        = "work1"
   description = "Allow TLS inbound traffic"
