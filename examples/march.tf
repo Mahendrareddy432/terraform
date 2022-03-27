@@ -1,5 +1,5 @@
 resource "aws_instance" "devops" {
-  ami           = ami-0eb5f3f64b10d3e0e
+  ami           = "ami-0eb5f3f64b10d3e0e"
   instance_type = "t2.micro"
   vpc_security_group_ids =["aws_security_group.march.id"] 
 
