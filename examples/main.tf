@@ -46,3 +46,13 @@ resource "aws_security_group" "work1" {
   }
 }
 
+
+## s3 bucket
+
+terraform {
+  backend "s3" {
+    bucket = "mahendra432"
+    key    = "examples/main/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
